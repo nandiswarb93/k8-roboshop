@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: nandiswarb93/redis:7.0
+        image: redis:7.0
         readinessProbe:
           tcpSocket:
             port : 6379
