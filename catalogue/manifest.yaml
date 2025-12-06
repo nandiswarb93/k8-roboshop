@@ -1,9 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name : catalogue
+  namespace : roboshop
+data : 
+  MONGO : "true"
+  MONGO_URL: "mongodb://mongodb:27017/catalogue" 
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: catalogue
   namespace: roboshop
-  # these are replica set labels
+  # these are replica set labels  
   labels:
     project: roboshop
     component: catalogue
