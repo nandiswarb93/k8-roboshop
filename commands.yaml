@@ -1,0 +1,30 @@
+cd catalogue
+kubectl apply -f manifest.yaml
+cd ..
+cd cart
+kubectl apply -f manifest.yaml
+cd ..
+cd debug
+kubectl apply -f manifest.yaml
+cd ..
+cd frontend
+kubectl apply -f manifest.yaml
+cd ..
+cd mongodb
+kubectl apply -f manifest.yaml
+cd ..
+cd mysql
+kubectl apply -f manifest.yaml
+cd ..
+cd payment
+kubectl apply -f manifest.yaml
+cd ..
+cd rabbitmq
+kubectl apply -f manifest.yaml
+cd ..
+cd reis
+kubectl apply -f manifest.yaml
+cd ..
+cd user
+kubectl apply -f manifest.yaml
+cd ..
